@@ -10,9 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LittleDiary">
         <activity android:name=".CalendarActivity"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.LittleDiary.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.LittleDiary.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.LittleDiary.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
