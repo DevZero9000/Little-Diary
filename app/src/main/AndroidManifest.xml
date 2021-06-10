@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LittleDiary">
-        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".ViewDiaryActivity"></activity>
+        <activity android:name=".WriteActivity" />
+        <activity
+            android:name=".DrawerActivity"
+            android:theme="@style/Theme.LittleDiary.NoActionBar" />
+        <activity android:name=".CalendarActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.LittleDiary.NoActionBar" />
