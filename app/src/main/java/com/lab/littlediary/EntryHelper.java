@@ -2,9 +2,9 @@ package com.lab.littlediary;
 
 public class EntryHelper {
     String title;
-    int date;
-    int month;
-    int year;
+    private int date;
+    private int month;
+    private int year;
 
     public EntryHelper(String title, int date, int month, int year) {
         this.title = title;

@@ -45,6 +45,7 @@ public class EntryAdapter extends RecyclerView.Adapter<EntryAdapter.PhoneViewHol
         String monthLongName = calendar.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault());
 
         holder.date.setText(dayLongName.substring(0, 3) + " " + entryHelper.getDate() + " " + monthLongName.substring(0, 3));
+        holder.entryCount.setText("01");
     }
 
     @Override
@@ -61,6 +62,7 @@ public class EntryAdapter extends RecyclerView.Adapter<EntryAdapter.PhoneViewHol
 
         TextView title;
         TextView date;
+        TextView entryCount;
         RelativeLayout relativeLayout;
 
 
@@ -68,6 +70,7 @@ public class EntryAdapter extends RecyclerView.Adapter<EntryAdapter.PhoneViewHol
             super(itemView);
             itemView.setOnClickListener(this);
 
+            entryCount = itemView.findViewById((R.id.numberCard));
             title = itemView.findViewById(R.id.taglineCard);
             date = itemView.findViewById(R.id.dateCard);
             relativeLayout = itemView.findViewById(R.id.background_color);
